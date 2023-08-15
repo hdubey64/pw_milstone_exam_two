@@ -7,9 +7,7 @@ header {
    background-color: #a2ded0;
 }
 .container {
-   display: grid;
-   grid-template-columns: 1fr 3fr 1fr;
-   place-items: center;
+   display: flex;
    justify-content: space-between;
    align-items: center;
 }
@@ -18,22 +16,58 @@ nav > a {
    font-size: 2rem;
    font-weight: bolder;
    text-decoration: none;
-   color: black;
+   color: white;
 }
 nav > a:hover {
    cursor: pointer;
-   color: black;
+   color: #2a9d8f;
+   transition: color 3s;
 }
 nav > button {
-   display: block;
    border: none;
-   background-color: #e2c0ff;
+   background-color: #2a9d8f;
    height: 70px;
    width: 100px;
    font-size: 1rem;
+   /* transition: background-color 3s ease; */
+   transition: color 3s ease;
+   color: white;
 }
 
 .btnLogo {
    font-size: 2rem;
    font-weight: bolder;
+}
+
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 349.98px) {
+   .container {
+      display: flex;
+      justify-content: space-between;
+   }
+   nav > a {
+      font-size: 1rem;
+   }
+   nav > div {
+      display: none;
+   }
+   nav > button {
+      height: 30px;
+      width: 60px;
+      font-size: 0.9rem;
+   }
+   .btnLogo {
+      font-size: 16px;
+   }
+}
+
+/*Apply styles starting from medium devices and up to extra large devices */
+@media (min-width: 350px) and (max-width: 575.98px) {
+   nav > a {
+      font-size: 1.5rem;
+   }
+   nav > button {
+      height: 50px;
+      width: 70px;
+   }
 }
