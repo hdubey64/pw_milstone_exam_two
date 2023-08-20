@@ -26,20 +26,24 @@
             <a id="logo" class="logo" href="/projects-1/index.html"
                >PWSkills Blog</a
             >
-            <button id="create">
+            <button
+               id="create"
+               data-bs-toggle="modal"
+               data-bs-target="#exampleModal"
+            >
                <i class="bi bi-plus-lg btnLogo"></i>
             </button>
          </nav>
       </header>
-      <section>
+
+      <!-- Blog Section -->
+      <section title="Card Section">
          <main class="container">
             <div class="card">
                <div class="content">
                   <img
                      src="https://cdn.pixabay.com/photo/2023/04/11/16/04/solar-wind-7917659_1280.jpg"
                      alt=""
-                     width="300"
-                     height="200"
                   />
                   <div>
                      <h1 class="card-title">Title</h1>
@@ -49,12 +53,83 @@
                      </p>
                   </div>
                </div>
-               <button id="read" class="read">Read</button>
+               <div class="star-rating">
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+               </div>
+
+               <a href="/projects-1/blog.html" id="read"
+                  ><button class="read">Read</button></a
+               >
+
+               <!-- rating.js file -->
             </div>
          </main>
       </section>
-      <script src="/projects-1//assets/javascript/index.js"></script>
 
+      <!-- Form Moddel -->
+      <section title="Form Section">
+         <!-- Modal -->
+         <div
+            class="modal modalParent fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+         >
+            <div class="modal-dialog">
+               <div class="modal-content modelBox">
+                  <div class="modalHeader">
+                     <button
+                        type="button"
+                        class="closeBtn"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                     >
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                     </button>
+                  </div>
+
+                  <div class="modelBody">
+                     <input
+                        id="url"
+                        name="url"
+                        type="url"
+                        placeholder="Enter Blog Post URL:"
+                     />
+                     <input
+                        name="url"
+                        type="url"
+                        type="text"
+                        placeholder="Enter Blog Title:"
+                     />
+                     <input
+                        name="url"
+                        type="url"
+                        type="text"
+                        placeholder="Enter Blog Discription:"
+                     />
+                     <textarea
+                        name="textarea"
+                        id="textarea"
+                        cols="30"
+                        rows="10"
+                        placeholder="write..."
+                     ></textarea>
+                     <button type="button" class="modelBtn my-4">
+                        Add Blog
+                     </button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <script src="/projects-1//assets/javascript/index.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
    </body>
