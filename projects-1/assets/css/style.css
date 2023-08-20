@@ -78,16 +78,18 @@ section {
 .card a {
    background-color: var(--mintGreen);
    color: var(--electricBlue);
-   /* border: none; */
    text-align: center;
    text-decoration: none;
    border-radius: 5px;
    padding: 7px;
-   margin-bottom: 25px;
-   font-weight: 700;
+   margin: 10px auto;
+   width: 100%;
 }
 .card button {
    border: none;
+   font-weight: 700;
+   background-color: var(--mintGreen);
+   color: var(--electricBlue);
 }
 
 .modelBox {
