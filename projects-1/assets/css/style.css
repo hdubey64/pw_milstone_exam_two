@@ -7,6 +7,11 @@
    --mintGreen: #a2ded0;
    --electricBlue: #2a9d8f;
 }
+body {
+   font-family: "Oswald", sans-serif;
+   /* font-family: "Poppins", sans-serif; */
+   /* word-spacing: 2px; */
+}
 header {
    background-color: var(--mintGreen);
 }
