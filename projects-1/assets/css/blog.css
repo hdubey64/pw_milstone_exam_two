@@ -1,0 +1,42 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+:root {
+   --mintGreen: #a2ded0;
+   --electricBlue: #2a9d8f;
+}
+section {
+   padding: 40px;
+}
+header {
+   background-color: var(--mintGreen);
+}
+.container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+nav > a {
+   font-size: 2rem;
+   font-weight: bolder;
+   text-decoration: none;
+   color: white;
+}
+nav > button {
+   border: none;
+   background-color: var(--electricBlue);
+   height: 70px;
+   width: 100px;
+   font-weight: bolder;
+   transition: color 3s esde-in-out;
+   color: white;
+   font-size: 2.5rem;
+}
+
+.btnLogo {
+   font-size: 1rem;
+   font-weight: bolder;
+}
