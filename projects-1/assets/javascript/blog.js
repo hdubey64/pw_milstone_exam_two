@@ -19,11 +19,11 @@ createBtn.addEventListener("mouseout", () => {
    createBtn.style.backgroundColor = "#2a9d8f";
    createBtn.style.width = "100px";
    createBtn.style.fontWeight = "bolder";
-   createBtn.style.fontSize = "2.5rem";
+   createBtn.style.fontSize = "2rem";
    createBtn.style.color = "white";
 });
 
 createBtn.addEventListener("click", function () {
-   // Change the location to Page 1
+   // Change the location to Homepage
    window.location.href = "index.html";
 });
