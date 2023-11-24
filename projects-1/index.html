@@ -44,40 +44,11 @@
 
       <!-- Blog Section -->
       <section title="Card Section">
-         <main class="container">
-            <div class="card">
-               <div class="content">
-                  <img
-                     src="https://cdn.pixabay.com/photo/2023/04/11/16/04/solar-wind-7917659_1280.jpg"
-                     alt=""
-                  />
-                  <div>
-                     <h1 class="card-title">Title</h1>
-                     <p class="card-para">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Dolor recusandae ex tempora esse,
-                     </p>
-                  </div>
-               </div>
-               <div class="star-rating">
-                  <span class="star">&#9733;</span>
-                  <span class="star">&#9733;</span>
-                  <span class="star">&#9733;</span>
-                  <span class="star">&#9733;</span>
-                  <span class="star">&#9733;</span>
-               </div>
-
-               <a href="/projects-1/blog.html" id="read"
-                  ><button class="read">Read</button></a
-               >
-
-               <!-- rating.js file -->
-            </div>
-         </main>
+         <main class="container" id="main"></main>
       </section>
 
       <!-- Form Moddel -->
-      <section title="Form Section">
+      <section class="modolSection" title="Form Section">
          <!-- Modal -->
          <div
             class="modal modalParent fade"
@@ -102,20 +73,20 @@
 
                   <div class="modelBody">
                      <input
-                        id="url"
-                        name="url"
+                        id="blogPoster"
+                        name="image"
                         type="url"
-                        placeholder="Enter Blog Post URL:"
+                        placeholder="Enter Blog Poster URL:"
                      />
                      <input
-                        name="url"
-                        type="url"
+                        id="title"
+                        name="title"
                         type="text"
                         placeholder="Enter Blog Title:"
                      />
                      <input
-                        name="url"
-                        type="url"
+                        id="description"
+                        name="description"
                         type="text"
                         placeholder="Enter Blog Discription:"
                      />
@@ -126,7 +97,12 @@
                         rows="10"
                         placeholder="write..."
                      ></textarea>
-                     <button type="button" class="modelBtn my-4">
+                     <button
+                        type="button"
+                        id="addBlogBtn"
+                        class="modelBtn my-4"
+                        onclick="createBlog()"
+                     >
                         Add Blog
                      </button>
                   </div>
