@@ -81,7 +81,8 @@ const openBlogDetails = (id) => {
       const detailsPageURL = `blog.html?id=${selectedBlog.id}`;
 
       // Open the new page in a new browser tab
-      window.open(detailsPageURL, "_blank");
+      // window.open(detailsPageURL, "_blank");
+      window.location.href = detailsPageURL;
    } else {
       console.log("Blog post not found.");
    }
