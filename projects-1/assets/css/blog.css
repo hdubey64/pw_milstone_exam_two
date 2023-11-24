@@ -4,11 +4,13 @@
    box-sizing: border-box;
 }
 :root {
-   --mintGreen: #a2ded0;
-   --electricBlue: #2a9d8f;
+   --primaryColor: #6200ee;
+   /* --primaryColor: #115a9b; */
+   /* --primaryColor: #0569ff; */
 }
 body {
    font-family: "Oswald", sans-serif;
+   /* font-family: "inter", sans-serif; */
    /* font-family: "Poppins", sans-serif; */
    /* word-spacing: 2px; */
 }
@@ -16,7 +18,7 @@ section {
    padding: 90px;
 }
 header {
-   background-color: var(--mintGreen);
+   background-color: var(--primaryColor);
 }
 header .container {
    display: flex;
@@ -28,16 +30,15 @@ nav > a {
    font-size: 2rem;
    font-weight: bolder;
    text-decoration: none;
-   color: white;
+   color: #ffffff;
 }
 nav > button {
    border: none;
-   background-color: var(--electricBlue);
+   background-color: var(--primaryColor);
    height: 70px;
    width: 100px;
-   font-weight: bolder;
    transition: color 3s esde-in-out;
-   color: white;
+   color: #ffffff;
    font-size: 2rem;
 }
 
@@ -47,41 +48,45 @@ nav > button {
 }
 
 section > main {
-   border: 1px Solid var(--electricBlue);
-   padding: 20px 10px;
+   /* border: 1px Solid var(--primaryColor); */
+   /* padding: 20px; */
    border-radius: 16px;
+   box-shadow: 0px 0px 75px 0.5px #c3c3c3;
 }
 
-.header main {
+.header {
    display: flex;
+   align-items: center;
    justify-content: space-between;
-   padding: 10px;
-
-   border-radius: 12px;
-   background-color: var(--electricBlue);
+   gap: 75px;
+   /* padding: 12px; */
+   border-radius: 12px 12px 0 0;
+   background-color: var(--primaryColor);
+   overflow: hidden;
 }
 
-.header main img {
-   width: 300px;
-   height: 200px;
-   border-radius: 8px;
+.header img {
+   width: 500px;
+   height: 300px;
+   border-radius: 0px 6px 6px 0px;
 }
 
 .content {
-   max-width: 50%;
-   margin: auto 10px;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   padding-left: 30px;
+}
+.description {
+   color: rgba(214, 214, 214, 0.917);
+   font-size: 1.8rem;
 }
 
 .content h1 {
    color: white;
-   font-weight: bolder;
-}
-.content p {
-   color: white;
-   font-size: 1.2rem;
-   /* font-weight: bolder; */
+   font-weight: 700;
 }
 
 article {
-   padding: 40px 20px;
+   padding: 40px 30px;
 }
