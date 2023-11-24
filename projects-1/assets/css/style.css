@@ -19,6 +19,8 @@ header {
    display: flex;
    justify-content: space-between;
    align-items: center;
+   gap: 50px 20px;
+   flex-wrap: wrap;
 }
 
 nav > a {
@@ -72,12 +74,21 @@ section {
 .content {
    display: flex;
    flex-direction: column;
+   gap: 10px;
 }
 
 .card-title {
-   font-size: 1.5rem;
+   font-size: 1.3rem;
    position: relative;
    padding-bottom: 10px;
+   font-weight: bolder;
+   height: 80px;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 3; /* Number of lines to show */
+   -webkit-box-orient: vertical;
+   /* text-indent: 10px; */
 }
 
 .card-title::after {
@@ -88,6 +99,15 @@ section {
    position: absolute;
    left: 0;
    bottom: 0;
+}
+
+.card-para {
+   height: 50px;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 2; /* Number of lines to show */
+   -webkit-box-orient: vertical;
 }
 .card a {
    background-color: var(--primaryColor);
